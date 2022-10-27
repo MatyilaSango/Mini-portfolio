@@ -1,12 +1,11 @@
 *{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "poppins";
 }
 
 .container {
   width: 1080px;
-  height: 100vh;
+  height: 640px;
   background-color: #222222;
-  
 }
 .nav{
   width: 100%;
@@ -14,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #E67058;
 }
 .nav .left-span{
   width: 45px;
@@ -26,10 +26,54 @@
 }
 .nav .mid-span{
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  margin-left: -350px;
 }
 .nav .rigth-span{
   width: 70px;
   display: flex;
   justify-content: space-between;
+}
+.nav .rigth-span img{
+  height: 25px;
+}
+.main-body-container{
+  width: 100%;
+  height: calc(100% - 70px);
+  position: relative;
+}
+.my-pic-container{
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  right: 20%;
+  top: 40%;
+  transform: translate(20%, -40%);
+  box-shadow: 30px 30px 0px 0px #222222, 30px 30px 0px 5px #E67058 ;
+  border-radius: 20px;
+}
+.my-pic-container img{
+  height: 400px;
+  object-fit: fill;
+  border-radius: 20px;
+}
+.my-email-container{
+  color: white;
+  position: absolute;
+  bottom: 150px;
+  right: -100px;
+  transform: rotate(90deg);
+}
+.about-container{
+  width: 500px;
+  height: 90%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+}
+.about-container p{
+  font-size: 13px;
 }
